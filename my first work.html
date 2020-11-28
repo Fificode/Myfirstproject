@@ -9,23 +9,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">   
 	<script src="https://kit.fontawesome.com/395d0a574b.js" crossorigin="anonymous"></script>
 <style>
+	body{margin: 0;
+		}
 	* {box-sizing:border-box;}
 
 	
+		
 
-.logoname{color: red;
-	text-shadow: 2px 2px 2px yellow;
-			font-family: 'Great Vibes', cursive;
-			text-align: center;
-			
-			}
+.follow{display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 
-			.divnav{position: relative;
-			top:1;}
+}
+.follow > .followitem{margin-top:-5%;
+	
+	}
+ 
+#search{margin-right: 20px;
+	 
+	border: 2px solid black;
+	padding: 10px;
+	border-radius: 8px;
+background-image: url(image_search.png);
+background-repeat:  no-repeat;
+background-size: ;
+background-attachment: fixed;
+background-position:; 
+}
 
-			.nav{position: fixed;
-				top: 3%;}
+#cart{padding-right: 30px;
+			color: red;
+			font-size: 25px;}
+			#mobile{padding-right: 5px;
+			font-size: 30px;}
 
+#phone-number{font-size: 20px;
+			padding-right: 20px;
+			vertical-align: top;}
+.nav{position: fixed;
+				top: 3%;
+				left: 3px;}
+
+			.item{float: left;
+		border-right: 1px solid #bbb;
+
+		}
+	.item .aitem{background-color: black;
+padding: 14px 16px;
+display:block;
+		color:white;}
+	.uitem{overflow: hidden;
+		list-style-type: none;
+		padding: 0;
+		margin:0;
+		
+	}
+	#active{background-color: green;}
+	
+		.item .aitem:hover:not(#active){ background-color: #f1f1f1;
+		}
+.aitem{text-decoration: none;}
+		
 			.landingpageimage{background-image: url('https://yummydrool.com/wp-content/uploads/2019/08/omsdcknr4ozd6on6lh4o.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -44,64 +88,35 @@
 		   font-family:"Times New Roman",Times, serif; }
 	
 
-	.item{float: left;
-		border-right: 1px solid #bbb;
-
-		}
-	.item .aitem{background-color: black;
-		display:block;
-
-		
-		padding: 14px 16px;
-		color:white;}
-	.uitem{overflow: hidden;
-		list-style-type: none;
-		padding: 0;
-		margin:0;
-		
-	}
-	.item .aitem:hover{opacity: 0.3;
-		color: white;}
-.aitem{text-decoration: none;}
-
-.follow{list-style-type: none;
-
-padding: 0;
-margin:10px;}
-
-.search{
+	.logoname{color: red;
+	text-shadow: 2px 2px 2px yellow;
+			font-family: 'Great Vibes', cursive;
+			text-align: center;
+			
+			}
 
 
-
-}
-#search{padding-right:20px;
-font-size: 25px;}
-
-
-.followitem{
-	float: right;
-	
-	}
- .followitem .fitem{text-decoration: none;
- 	
- 	display: block;}
 
  	.h2menu{text-align: center;
 font-size: 40px;}
 
+
+.menu-flex{display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;}
+
 .menu-container{
-	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	float: left;
-	width: 250px;
-text-align: center;
-margin: 22px;
-}
+	margin: 28px;
+width: 250px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;}
 .image .menu-container { width: 100%;
 height: auto; }
 
 
 
-.order-description{padding: 5px;
+.order-description{padding: 10px;
 text-align: center;
 font-size: 23px; }
 
@@ -119,6 +134,8 @@ text-align: center;
 
 .about{display: flex;
 			flex-direction: row;
+			
+
 font-family: 'Tajawal', sans-serif;
 padding-top: 70px;
 
@@ -126,7 +143,8 @@ padding-top: 70px;
 
 .content > .about .abus{width: 100%;
 	height: auto;
-margin:5px;}
+
+}
 
 
 
@@ -143,13 +161,22 @@ margin:5px;}
 }
 
 		  .footer{
-		  	
 		  	background-color: rgba(0,0,0);
-		  	color: white;
+		  	color: white;}
 
-		  }
+		  .stay-connected{ font-size: 23px;}
+		  .inform{font-size: 22px;}
+		  .contact-us{font-size: 22px;}
+		  #map-marker{padding: 2px;}
+		  #phone-alt{padding: 2px;}
+		  .working-time{font-size: 22px;}
+		  #clock{padding: 2px;}
+		  #facebook{padding: 5px;}
+		  #copyright{text-align: center;
+    padding-bottom: 5px;}
 
 .footerlogo{color: yellow;
+	
 	padding: 9px;
 	border: 2px solid red;
 	border-radius: 50%;
@@ -160,34 +187,64 @@ margin:5px;}
 			z-index: 1;}
 .footerflex{display: flex;
 		  	flex-direction: row;
+		  	flex-wrap: wrap;
 		  	justify-content: space-between;
-		  	padding-top: 25px;
-		  	padding-left: 13px;
-		  	padding-right: 15px;
+		  	padding-top: 20px;
+		  	padding-left: 10px;
+		  	padding-right: 12px;
 		  	}
 
-@media only screen and (max-width: )
+@media screen and (max-width: 600px){
+.menu-container{margin: auto;
+margin-bottom: 20px;}
+		.follow > .follow-item{margin-top: ;}
+		.landingpageimagetext{
+			}
+		   .about{display: flex;
+		   	flex-direction: column;
+		   	flex-wrap: wrap;}
+		   .content > .about .abus{width: 100%;
+	height: auto;}
+	
+ .info {margin-bottom: 10px;
+ 	margin-top: -60px;}
+.footer-flex{flex-wrap: wrap;
+	}
+.footerlogo{display: none;}
+.stay-connected{font-size: 15px; }
+.inform{font-size: 15px;}
+.contact-us{font-size: 15px;
+}
+#map-marker{padding: 1px;}
+#phone-alt{padding: 1px;}
+.working-time{font-size: 15px;}
+#clock{padding: 1px;}
+#facebook{padding: 3px;}
+.contact{padding-top: 10px;}
+.imageabout .abus{margin: auto;}
 
+.logoname{margin-top: 55px;}
+.nav{width: 100%;
+	position: fixed;
+top: 0;
+left: 0;}
+ .nav .uitem .item .aitem {}
 
-/*
-@media only screen and (max-width: 700px) {
-  .menu-container {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+	
+	#phone-number{font-size: 15px;
+		padding-right: 10px;}
+	#mobile{font-size: 20px;
+		padding-right: 5px;}
+		#cart{font-size: 20px;
+		padding-right: 15px;}
+		#search{padding: 5px;
+			margin-bottom: 10px;}
 }
 
-@media only screen and (max-width: 500px) {
-  .menu-container {
-    width: 100%;
-  }
-}
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}/*
+
+
+
 
 
 
@@ -196,35 +253,33 @@ margin:5px;}
 </style>
 
 </head>
-<body>
-	<header>
-		<div><div><ul class="follow">
-			
-			
-			<li class="followitem"><a href="#" class="fitem"></a><i class="fas fa-mobile-alt" style="padding-right: 5px;
-			font-size: 30px;"></i></a><span style="font-size: 20px;
-			padding-right: 20px;">+234 068 456 4570</span>
-					</li><li class="followitem"><a href="#" class="fitem"></a><i class="fas fa-shopping-cart" style="padding-right: 20px;
-			color: red;
-			font-size: 25px;"></i></a></li>
-<li class="followitem"><input type="search" name="search"> <i class="fas fa-search" id="search"></i></li>
-
-				
-					</ul></div><h1 class="logoname" id="home"> <b>  Nana's Fast Food </b></h1>
-
-				
-		</header>
-
-			<div>
+<body><h1 class="logoname" id="home"> <b>  Nana's Fast Food </b></h1>
+<div>
 				<nav class="nav">
-			<ul class="uitem"><li class="item">
-				<a href="#home" class="aitem">Home</a></li>
+			<ul class="uitem">
+				<li class="item"><a href="#home" class="aitem" id="active">Home</a></li>
 				<li class="item"><a href="#menu" class="aitem">Menu</a></li>
 				<li class="item"><a href="#aboutus" class="aitem">About Us</a></li>
 				<li class="item"><a href="#contactus" class="aitem">Contact</a></li>
 				</ul></nav>
 				</div>
-		</div>
+		
+			
+	
+		<div class="follow">
+			<div class="followitem"><input type="search" name="search" id="search" size="20">
+</div>
+			
+					<div class="followitem"><a href="#" class="fitem"></a><i class="fas fa-shopping-cart" id="cart"></i></a></div><div class="followitem"><a href="#" class="fitem"></a><i class="fas fa-mobile-alt" id="mobile"></i></a><span  id="phone-number" >+234 068 456 4570</span>
+					</div>
+
+
+				
+					</div>
+				
+				
+		
+
 			
 			
 		<div>
@@ -242,7 +297,7 @@ margin:5px;}
 <h2 id="menu" class="h2menu">Our menu</h2>
 
 
-<div>
+<div class="menu-flex">
 <div class="menu-container">
 	<img class="image"   src="https://economictimes.indiatimes.com/thumb/msid-72863458,width-1200,height-900,resizemode-4,imgsize-731189/burger-thnkstck.jpg?from=mdr" width="100%" height="300" alt="Burger">
 		<div class="order-description"><p>
@@ -359,37 +414,36 @@ margin:5px;}
 		  	</div></br></br></br></br></br></br></br>
 
 		  
-<div class="footer" id="contactus">
+<footer class="footer" id="contactus">
 <div class="footerflex">
-<div>
-	<label style="font-size: 23px;">Stay Connected For Our Latest News Letter</label></br></br>
+<div class="connect">
+	<label class="stay-connected" >Stay Connected For Our Latest News Letter</label></br></br>
 	<input type="email" name="email" placeholder="Input your email address" size="40"></br></br></br></br></br></br></br>
 	<div class="footerlogo">Nana's Fast Food</div>
 </div>
-<div>
-	<span style="font-size: 22px;
 
-	">INFORMATION</span></br></br>
+	<div class="info">
+	<span class="inform" >INFORMATION</span></br></br>
 	<a href="#" class="afooter" >About us</a></br></br>
 	<a href="#"  class="afooter" >Find store</a></br></br>
 	<a href="#"  class="afooter">Payment</a></br></br>
 	<a href="#"  class="afooter">Help</a>
 </div>
-<div><span style="font-size: 22px;">CONTACT US</span></br></br>
-	<i class="fas fa-map-marker-alt" style="padding: 2px;"> </i> 40, Lorem ipsum dolor</br></br>
-<i class="fas fa-phone-alt" style="padding: 2px;" ></i>08069789500</br></br></br>
-<span style="font-size: 22px;">WORKING TIME</span></br></br>
-<i class="far fa-clock" style="padding: 2px;"></i>Open Monday - Saturday (8a.m - 4p.m)</br></br>
-<span>
-<i class="fab fa-facebook" style="padding: 5px;"></i>
-					<i class="fab fa-twitter" style="padding: 5px;"></i>
-					<i class="fab fa-instagram" style="padding: 5px;"></i></span>
-    </div></div></br></br>
-    <p style="text-align: center;
-    padding-bottom: 5px;">  <i class="far fa-copyright"></i>2020 Copyright Lorem ipsum dolor</p>
-</div>
+<div class="contact"><span class="contact-us" >CONTACT US</span></br></br>
+	<i class="fas fa-map-marker-alt" id="map-marker"> </i> 40, Lorem ipsum dolor</br></br>
+<i class="fas fa-phone-alt" id="phone-alt"></i>08069789500</br></br></br>
 
-  
+<span  class="working-time">WORKING TIME</span></br></br>
+<i class="far fa-clock" id="clock"></i>Open Monday - Saturday (8a.m - 4p.m)</br></br>
+<span>
+<i class="fab fa-facebook" id="facebook" ></i>
+					<i class="fab fa-twitter" id="facebook"></i>
+					<i class="fab fa-instagram" id="facebook"></i></span></div>
+    </div></br></br>
+    <p id="copyright">  <i class="far fa-copyright"></i>2020 Copyright Lorem ipsum dolor</p>
+
+
+ </footer> 
 
 
 
