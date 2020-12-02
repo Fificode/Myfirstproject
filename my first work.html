@@ -25,16 +25,18 @@
 	
 	}
  
-#search{margin-right: 20px;
+.search{margin-right: 20px;
 	 
 	border: 2px solid black;
 	padding: 10px;
-	border-radius: 8px;
-background-image: url(image_search.png);
+	border-radius: 8px;}
+	#search-icon{
+background-image: url("https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png");
 background-repeat:  no-repeat;
-background-size: ;
-background-attachment: fixed;
-background-position:; 
+background-size:contain ;
+
+background-origin: content-box;
+
 }
 
 #cart{padding-right: 30px;
@@ -48,7 +50,8 @@ background-position:;
 			vertical-align: top;}
 .nav{position: fixed;
 				top: 3%;
-				left: 3px;}
+				left: 3px;
+				}
 
 			.item{float: left;
 		border-right: 1px solid #bbb;
@@ -66,7 +69,7 @@ display:block;
 	}
 	#active{background-color: green;}
 	
-		.item .aitem:hover:not(#active){ background-color: #f1f1f1;
+		.item .aitem:hover:not(#active){ background-color: rgba(0,0,0,0.3);
 		}
 .aitem{text-decoration: none;}
 		
@@ -103,11 +106,11 @@ font-size: 40px;}
 
 .menu-flex{display: flex;
 flex-direction: row;
-justify-content: space-around;
+
 flex-wrap: wrap;}
 
 .menu-container{
-	margin: 28px;
+	margin: 43px;
 width: 250px;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;}
@@ -130,7 +133,8 @@ text-align: center;
 
 		.content{clear: left;}
 
-.abus{text-align: center;}
+.abus{text-align: center;
+margin-top: -25px;}
 
 .about{display: flex;
 			flex-direction: row;
@@ -194,12 +198,11 @@ padding-top: 70px;
 		  	padding-right: 12px;
 		  	}
 
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 .menu-container{margin: auto;
-margin-bottom: 20px;}
-		.follow > .follow-item{margin-top: ;}
-		.landingpageimagetext{
-			}
+margin-bottom: 35px;}
+		
+		
 		   .about{display: flex;
 		   	flex-direction: column;
 		   	flex-wrap: wrap;}
@@ -224,23 +227,96 @@ margin-bottom: 20px;}
 .imageabout .abus{margin: auto;}
 
 .logoname{margin-top: 55px;}
-.nav{width: 100%;
+.nav{
 	position: fixed;
 top: 0;
 left: 0;}
- .nav .uitem .item .aitem {}
 
+.nav .uitem{width: 100%;}
 	
 	#phone-number{font-size: 15px;
 		padding-right: 10px;}
-	#mobile{font-size: 20px;
+	#mobile{font-size: 15px;
 		padding-right: 5px;}
 		#cart{font-size: 20px;
-		padding-right: 15px;}
-		#search{padding: 5px;
+		padding-right: 15px;
+		padding-left: 5px;}
+		.search{padding: 5px;
+
 			margin-bottom: 10px;}
 }
 
+
+
+
+
+
+
+
+
+		  	@media only screen and (min-width: 768px){
+
+	.nav{width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.landingpageimagetext{position: absolute;
+		top: 25%;}
+	.menu-flex{justify-content: space-around;}
+	.about{display: flex;
+		   	flex-direction: column;
+		   	flex-wrap: wrap;}
+		   	.imageabout .abus{margin: auto;}
+		   	 .content > .about .abus{width: 100%;
+	height: auto;}
+	.logoname{margin-top: 55px;}
+	.search{margin-top: 30px;
+
+		padding-right: 250px;
+		margin-bottom: 10px;}
+		#cart{margin-top: 30px;
+			padding-right: 50px;
+			padding-left: 40px;}
+#phone-number{padding-right: 20px;
+vertical-align: bottom;}
+#mobile{margin-top: 30px;}
+
+.footerlogo{padding: 5px; 
+font-size:  20px;}
+.stay-connected{font-size: 15px; }
+.inform{font-size: 15px;}
+.contact-us{font-size: 15px;
+}
+#map-marker{padding: 1px;}
+#phone-alt{padding: 1px;}
+.working-time{font-size: 15px;}
+#clock{padding: 1px;}
+#facebook{padding: 3px;}
+
+}
+
+
+@media only screen and (min-width: 992px){
+
+
+	.landingpageimagetext{position:absolute;
+		top:40%;}
+}
+
+@media only screen and (min-width: 1200px ){
+	.landingpageimagetext{position: absolute;
+		top: 15%;}
+		.follow > .followitem{margin-top: -2%;}
+		.nav{position: fixed;
+				top: 2%;
+				left: 3px;
+				}
+.search{margin-right: 50px;}
+#cart{padding-right: 50px;}
+#phone-number{padding-right: 50px;}
+
+}
 
 
 
@@ -254,20 +330,20 @@ left: 0;}
 
 </head>
 <body><h1 class="logoname" id="home"> <b>  Nana's Fast Food </b></h1>
-<div>
-				<nav class="nav">
+
+				<div class="nav">
 			<ul class="uitem">
 				<li class="item"><a href="#home" class="aitem" id="active">Home</a></li>
 				<li class="item"><a href="#menu" class="aitem">Menu</a></li>
 				<li class="item"><a href="#aboutus" class="aitem">About Us</a></li>
 				<li class="item"><a href="#contactus" class="aitem">Contact</a></li>
-				</ul></nav>
-				</div>
+				</ul></div>
+				
 		
 			
 	
 		<div class="follow">
-			<div class="followitem"><input type="search" name="search" id="search" size="20">
+			<div class="followitem"><input type="search" name="search" class="search" id="search-icon" size="20">
 </div>
 			
 					<div class="followitem"><a href="#" class="fitem"></a><i class="fas fa-shopping-cart" id="cart"></i></a></div><div class="followitem"><a href="#" class="fitem"></a><i class="fas fa-mobile-alt" id="mobile"></i></a><span  id="phone-number" >+234 068 456 4570</span>
@@ -440,7 +516,7 @@ left: 0;}
 					<i class="fab fa-twitter" id="facebook"></i>
 					<i class="fab fa-instagram" id="facebook"></i></span></div>
     </div></br></br>
-    <p id="copyright">  <i class="far fa-copyright"></i>2020 Copyright Lorem ipsum dolor</p>
+    <p id="copyright">  <i class="far fa-copyright"></i>2020 Copyright Firdaws Lamidi</p>
 
 
  </footer> 
