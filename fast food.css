@@ -76,6 +76,7 @@ display:block;
 			height: 500px;}
 
 			.landingpageimage2{background-color: rgba(0,0,0,0.6);
+				position: relative;
 			height: 500px;}
 
 			.landingpageimagetext{color: white;
