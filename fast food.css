@@ -174,7 +174,8 @@ padding-top: 70px;
 		  #clock{padding: 2px;}
 		  #facebook{padding: 5px;}
 		  #copyright{text-align: center;
-    padding-bottom: 5px;}
+    padding-bottom: 5px;
+margin: 0;}
 
 .footerlogo{color: yellow;
 	
@@ -243,8 +244,7 @@ left: 0;}
 			margin-bottom: 10px;}
 }
 
-
-
+	
 
 
 
@@ -259,7 +259,7 @@ left: 0;}
 	left: 0;
 }
 .landingpageimagetext{position: absolute;
-		top: 25%;}
+		top: 30%;}
 	
 	.menu-container{margin: 65px;}
 	.about{display: flex;
@@ -331,7 +331,7 @@ font-size:  20px;}
 }
 
 	.landingpageimagetext{position: absolute;
-		top: 40%;
+		top: 25%;
 		}
 
 .about{display: flex;
