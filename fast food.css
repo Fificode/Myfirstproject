@@ -297,26 +297,31 @@ font-size:  20px;}
 @media only screen and (min-width: 992px){
 
 .nav{width: 23.75%;
+	position: fixed;
+				top: 2%;
+				left: 3px;
+		
 	
-}
-.follow > .followitem{margin-top: -2%;
-	
-	}
-.search{padding: 10px;
-	margin-left: 10px;
- 
 }
 
-#cart{padding-right: px;
+.search{padding: 10px;
+	margin-left: 25%;
+ margin-top: -30px;
+
+}
+
+#cart{
+	margin-top: -30px;
+	
 }
 			
 
-#phone-number{
-			padding-right: 5px;}
+#phone-number{margin-top: -30px;
+			}
 
-			#mobile{padding-right: px;
+			#mobile{
 				
-	
+	margin-top: -30px;
 	}
 
 .logoname{margin-top: 1px;
@@ -324,8 +329,9 @@ font-size:  20px;}
 	
 }
 
-	.landingpageimagetext{
-		padding-top: 350px;}
+	.landingpageimagetext{position: absolute;
+		top: 40%;
+		}
 
 .about{display: flex;
 			flex-direction: row;
@@ -344,10 +350,14 @@ flex-wrap: wrap;}
 
 @media only screen and (min-width: 1200px ){
 	.landingpageimagetext{position: absolute;
-		top: 15%;}
-		.follow > .followitem{margin-top: -2%;}
+		top: 30%;}
+		.follow > .followitem{margin-top:-3%;
+	
+	}
+ 
+		
 		.nav{position: fixed;
-				top: 1%;
+				top: 2%;
 				left: 3px;
 				width: 23.75%;
 
@@ -355,6 +365,7 @@ flex-wrap: wrap;}
 .search{margin-right: 50px;}
 #cart{padding-right: 50px;}
 #phone-number{padding-right: 50px;}
+.item:last-child{border-right: none;}
 
 }
 
