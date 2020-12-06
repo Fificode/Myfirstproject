@@ -104,11 +104,11 @@ font-size: 40px;}
 
 .menu-flex{display: flex;
 flex-direction: row;
-
+justify-content: center;
 flex-wrap: wrap;}
 
 .menu-container{
-	margin: 43px;
+	margin: 150px;
 width: 250px;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;}
@@ -132,7 +132,8 @@ text-align: center;
 		.content{clear: left;}
 
 .abus{text-align: center;
-margin-top: -25px;}
+margin-top: -25px;
+}
 
 .about{display: flex;
 			flex-direction: row;
@@ -157,6 +158,8 @@ padding-top: 70px;
 .aboutus{font-family: 'Great Vibes', cursive;
 		  font-size: 60px;
 		  color: rgb(218,165,32);}
+		  .plorem{font-size: 35px;
+		  	margin: 10px;}
 
 .afooter{text-decoration: underline;
 	color: white;
@@ -200,7 +203,7 @@ margin: 0;}
 @media only screen and (max-width: 600px) {
 .menu-container{margin: auto;
 margin-bottom: 35px;}
-		
+		.plorem{font-size: 30px;}
 		
 		   .about{display: flex;
 		   	flex-direction: column;
@@ -211,17 +214,18 @@ margin-bottom: 35px;}
  .info {margin-bottom: 10px;
  	margin-top: -60px;}
 .footer-flex{flex-wrap: wrap;
+	padding-left: 15px;
 	}
 .footerlogo{display: none;}
-.stay-connected{font-size: 15px; }
+.stay-connected{font-size: 15px;
+padding-top: 10px; }
 .inform{font-size: 15px;}
 .contact-us{font-size: 15px;
 }
-#map-marker{padding: 1px;}
-#phone-alt{padding: 1px;}
+
+#copyright{padding-bottom: 10px;}
 .working-time{font-size: 15px;}
-#clock{padding: 1px;}
-#facebook{padding: 3px;}
+
 .contact{padding-top: 10px;}
 .imageabout .abus{margin: auto;}
 
@@ -248,7 +252,9 @@ left: 0;}
 
 
 
-
+	@media only screen and (min-width: 600px){
+		.menu-container{margin: 20px;}
+	}
 
 
 		  	@media only screen and (min-width: 768px){
@@ -262,7 +268,7 @@ left: 0;}
 .landingpageimagetext{position: absolute;
 		top: 30%;}
 	
-	.menu-container{margin: 65px;}
+	.menu-container{margin: 30px;}
 	.about{display: flex;
 		   	flex-direction: row;
 		   	flex-wrap: wrap;}
@@ -287,11 +293,10 @@ font-size:  20px;}
 .inform{font-size: 15px;}
 .contact-us{font-size: 15px;
 }
-#map-marker{padding: 1px;}
-#phone-alt{padding: 1px;}
+
+
 .working-time{font-size: 15px;}
-#clock{padding: 1px;}
-#facebook{padding: 3px;}
+
 
 }
 
@@ -345,7 +350,7 @@ flex-direction: row;
 flex-wrap: wrap;}
 
 			.menu-container{
-	margin: 43px;}
+	margin: 20px;}
 
 }
 
